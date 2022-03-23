@@ -1,0 +1,82 @@
+.listDiv {
+    width: 70%;
+    margin: 20px 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    justify-content: space-between;
+    border-top: 1px solid #d8d8d8;
+    padding-top: 0.7%;
+  }
+  .todoDiv {
+    min-height: 120px;  
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 3.3%;
+    border: 1px solid #dadada;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+  .todoDiv:hover {
+    
+    box-shadow: rgba(119, 119, 119, 0.35) 3px 5px 15px;
+  }
+  #addBtn {
+    height: 34px;
+    width: 90px;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #172329;
+    color: white;
+  }
+  #input {
+    width: 30%;
+    height: 30px;
+    outline: none;
+    border: 1px solid #d5d5d6;
+    padding-left: 10px;
+  }
+  #inputDiv {
+    margin-left: 5%;
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+  }
+  .btnDiv {
+    width: 83%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btnDiv button {
+    border: 1px solid #2d799f;
+    padding: 0 15px;
+    height: 35px;
+    color: #2d799f;
+    font-weight:450;
+    background-color: #d3e0e7;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    transition: 0.5s;
+  }
+  .btnDiv button:hover {
+    background-color: rgba(62, 142, 182, 0.5);
+  }
+  .task {
+      font-weight: 500;
+  }
+  .Link {
+    color: black;
+  text-decoration: none;
+  }
+  #todoCount{
+    font-size:150px;
+    font-family:serif;
+    font-weight:550;
+    float: right;
+    margin-right:5%;
+    margin-top: -3%;
+    color:#172329;
+  }

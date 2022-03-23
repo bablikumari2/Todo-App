@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import {Todo} from './components/Todo'
+import {EditTodo} from './components/EditTodo'
+import { Route, Routes ,Link} from "react-router-dom";
+import { Details } from './components/Details';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <Link to={"/"}>
+        <img src='https://learn.masaischool.com/img/logo-navbar.svg'/>  
+        </Link>
+        TODOS-APP
+  
       </header>
+      <Routes>
+      <Route path="/" element={<Todo/>}></Route> 
+      <Route path="/todo/:id/edit" element={<EditTodo/>}></Route>
+      <Route path="/todo/:id" element={<Details/>}></Route>
+      </Routes>
     </div>
   );
 }
-
 export default App;

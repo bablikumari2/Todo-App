@@ -1,0 +1,9 @@
+#info {
+    border: 1px solid rgb(231, 231, 231);
+    width: 30%;
+    margin: 100px 20%;
+    padding: 10px;
+}
+#info:hover{
+    box-shadow: rgba(119, 119, 119, 0.35) 3px 5px 15px;
+}
